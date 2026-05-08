@@ -1,9 +1,14 @@
 package com.projeto.order_api.entities;
 
 public class OrderItem {
+    private Long id;
     private Integer quantity;
     private Double price;
     private Product product;
+
+    public OrderItem() {
+
+    }
 
     public OrderItem(Integer quantity, Double price, Product product) {
         this.quantity = quantity;
@@ -33,6 +38,15 @@ public class OrderItem {
 
     public void setProduct(Product product) {
         this.product = product;
+    }
+
+    // LONG (GET / SET) - ID (orderitem)
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Double subTotal() {

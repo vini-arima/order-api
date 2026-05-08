@@ -5,13 +5,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
+    private Long id;
     private LocalDateTime moment;
     private OrderStatus status;
     private Client client;
     // LISTA DE ITEMS
     private List<OrderItem> items = new ArrayList<>();
 
-    public Order(LocalDateTime moment, OrderStatus status, Client client) {
+    public Order() {
+
+    }
+
+    public Order(Long id, LocalDateTime moment, OrderStatus status, Client client) {
+        this.id = id;
         this.moment = moment;
         this.status = status;
         this.client = client;
@@ -53,8 +59,13 @@ public class Order {
         items.add(item);
     }
 
-    public void removeItem(OrderItem item) {
-        items.remove(item);
+    // LONG (GET / SET) - ID (order)
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     // FUNÇAO TOTAL

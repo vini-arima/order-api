@@ -3,9 +3,14 @@ package com.projeto.order_api.entities;
 import java.time.LocalDate;
 
 public class Client {
+    private Long id;
     private String name;
     private String email;
     private LocalDate birthDate;
+
+    public Client() {
+
+    }
 
     public Client(String name, String email, LocalDate birthDate) {
         this.name = name;
@@ -35,6 +40,16 @@ public class Client {
 
     public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
+    }
+
+    // LONG (GET / SET) - ID (client)
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
 }
