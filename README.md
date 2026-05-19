@@ -43,13 +43,15 @@ order-api/
 #### 1. Pré-requisitos
 Antes de iniciar, você precisa ter instalado:
 
-Java JDK \
+*Java JDK* 
+
 Verifique se o Java está instalado:
 
 ```
   java -version
 ```
-Maven \
+*Maven* 
+
 Verifique se o Maven está instalado:
 
 ```
