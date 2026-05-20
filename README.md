@@ -82,3 +82,7 @@ No Windows:
 ```
 curl -X POST http://localhost:8080/orders -H "Content-Type: application/json" -d "{\"id\":1,\"status\":\"PROCESSING\"}"
 ```
+
+```
+http://localhost:8080/orders/1
+```
