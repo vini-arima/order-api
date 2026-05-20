@@ -77,3 +77,8 @@ No Windows:
 ```
   mvn spring-boot:run
 ```
+
+### Crie seu primeiro Endpoint
+```
+curl -X POST http://localhost:8080/orders -H "Content-Type: application/json" -d "{\"id\":1,\"status\":\"PROCESSING\"}"
+```
