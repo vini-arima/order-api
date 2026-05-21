@@ -43,7 +43,7 @@ order-api/
 └────────────────── README.md
 ```
 ### Diagrama UML
-![Diagrama UML](img/diagrama.png)
+![Diagrama UML](./img/UML.JPG)
 ### Como Executar o Projeto
 #### 1. Pré-requisitos
 Antes de iniciar, você precisa ter instalado:
