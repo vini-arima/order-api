@@ -29,11 +29,6 @@ public class OrderController {
     public Order getById(@PathVariable Long id) {
 
         Order order = service.findById(id);
-
-        if (order == null) {
-            throw new RuntimeException("Pedido não encontrado");
-        }
-
         return order;
     }
 

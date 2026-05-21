@@ -20,7 +20,7 @@ public class OrderService {
     public Order findById(Long id) {
         for (Order order : orders) {
 
-            if (order.getId().equals(id)) {
+            if (order.getId() != null && order.getId().equals(id)) {
                 return order;
             }
 
